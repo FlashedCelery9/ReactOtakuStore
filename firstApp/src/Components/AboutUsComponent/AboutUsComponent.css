@@ -1,0 +1,43 @@
+.about{
+    background-color: rgb(43 1 62 / 0.51);
+}
+.aboutContainer h2{
+    color: white;
+    text-align: center;
+    margin: 2rem;
+}
+.aboutBlock{
+    width: 80%;
+    color: rgb(228 169 76);
+    justify-self: center;
+}
+.aboutBlock p{
+    margin: 1rem;
+
+
+}
+.aboutEmogies{
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+.aboutEmogies img{
+    width: 5rem;
+    border-radius: 60%;
+    box-shadow: 1px 15px 20px rgb(37 0 0);
+}
+.aboutFavorite{
+    display: flex;
+    justify-self: center;
+    gap: 1.5rem;
+}
+.favorite_item{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.favorite_item img{
+    width: 2rem;
+    height: 2rem;
+}

@@ -1,0 +1,68 @@
+.shop{
+    background-color: rgb(162 63 207 / 0.3);
+
+}
+.shop_container{
+    width: 100%;
+    justify-self: center;
+}
+.shop_container h2{
+    margin: 1rem;
+}
+.categories_box{
+    display: flex;
+    gap: 1rem;
+}
+.categories_box{
+    width: auto;
+    background-color: rgb(162 63 207 / 0.3);
+    justify-self: center;
+    text-align: center;
+    border: 1px solid rgb(213 178 83 / 0.76);
+    padding: 1rem;
+}
+.categoryCard{
+    padding: 0.5rem;
+    border: 1px solid rgb(140 113 43 / 0.83);
+    background-color: rgb(47 8 60 / 0.53);
+}
+.categoryCard:hover {
+    background-color: rgb(87 4 115 / 0.87);
+    color: white;
+    box-shadow: 10px 5px 1px rgb(162 63 207 / 0.3);
+    cursor: pointer;
+}
+.categories_box img{
+    width: 10rem;
+    height: 6rem;
+}
+.shopCards{
+    justify-self: center;
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+    background-color: rgb(134 54 170 / 0.64);
+    padding: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+.itemCard{
+    padding: 1rem;
+    width: 10rem;
+    background-color: rgb(88 13 122 / 0.7);
+    transition: transform 0.3s ease;
+
+}
+.itemCard:hover{
+    background-color: rgb(87 4 115 / 0.87);
+    color: white;
+    box-shadow: 10px 5px 1px rgb(162 63 207 / 0.3);
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+.itemCard img{
+    width: 9rem;
+    height: 11rem;
+    box-shadow: 5px 5px 15px rgb(216 123 255 / 0.72);
+    border: 2px solid rgb(168 105 54);
+}

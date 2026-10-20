@@ -1,0 +1,44 @@
+header{
+    background: linear-gradient(
+            180deg,
+            #1a0f1f 10%,
+            #371844 30%,
+            #4d255d 60%,
+            hsla(325, 77%, 24%, 0.765) 100%
+
+    );
+}
+.navMenu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+}
+.navMenu a{
+    text-decoration: none;
+    color: white;
+}
+.navMenu a:hover{
+    color: goldenrod;
+    border-bottom: 1px solid var(--text-h);
+}
+.navLogo{
+    height: 70px;
+
+}
+.navLogoBlock{
+    display: flex;
+    align-items: normal;
+    gap: 10px;
+}
+.navBar{
+    display: flex;
+}
+.menu-line{
+    width: 100%;
+    position: relative;
+    height: 2px;
+    background: linear-gradient(90deg, #d4af37d8, #fff2c2fc);
+
+}
