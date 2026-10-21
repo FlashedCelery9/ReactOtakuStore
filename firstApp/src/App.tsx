@@ -21,6 +21,7 @@ function App() {
             <div className="shadow"></div>
 
           <AboutUsComponent />
+
           <FooterComponent />
       </>
   )
