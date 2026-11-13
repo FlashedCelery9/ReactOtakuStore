@@ -2,27 +2,37 @@ import './App.css'
 
 import Header from "./Components/Header/Header.tsx";
 import Hero from "./Components/HeroBlock/Hero.tsx";
-import ShopComponent from "./Components/ShopBlock/ShopComponent.tsx";
 import AboutUsComponent from "./Components/AboutUsComponent/AboutUsComponent.tsx";
 import FooterComponent from "./Components/Footer/footerComponent.tsx";
+import {Suspense} from "react";
+import {Outlet} from "react-router";
+import ShopComponent from "./Components/ShopBlock/ShopComponent.tsx";
 
 function App() {
 
   return (
       <>
-        <Header />
-        <div className="menu-line"></div>
-        <div className="shadow"></div>
-        <Hero />
-          <div className="menu-line"></div>
-          <div className="shadow"></div>
-        <ShopComponent />
-            <div className="menu-line"></div>
-            <div className="shadow"></div>
+          <Suspense>
+              <Header />
 
-          <AboutUsComponent />
+              <Hero />
+              <div className="menu-line"></div>
+              <div className="shadow"></div>
+          </Suspense>
 
-          <FooterComponent />
+          <Suspense fallback={<p>Loading...</p>}>
+              <Outlet context={ShopComponent} />
+              <div className="menu-line"></div>
+              <div className="shadow"></div>
+          </Suspense>
+
+          <Suspense>
+              <AboutUsComponent />
+          </Suspense>
+
+        <Suspense>
+            <FooterComponent />
+        </Suspense>
       </>
   )
 }
